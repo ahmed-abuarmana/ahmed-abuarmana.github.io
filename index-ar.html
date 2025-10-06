@@ -4,38 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أحمد أبو عرمانة - مطور Backend</title>
+    <title>أحمد م. ت. أبو عرمانة - مطور Backend</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- عناصر الخلفية المتحركة -->
+    <div class="bg-animation">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
     <div class="container">
-        <!-- زر تغيير اللغة -->
+        <!-- مبدل اللغة مع الرسوم المتحركة -->
         <div class="language-switcher">
             <a href="index.html" class="lang-btn">
                 <i class="fas fa-globe"></i>
-                English
+                <span>English</span>
             </a>
         </div>
 
+        <!-- الهيدر مع التدرج والرسوم المتحركة -->
         <header class="header" id="top">
             <div class="header-content">
-                <h1 class="name">أحمد محمد أبو عرمانة</h1>
+                <div class="profile-image-wrapper">
+                    <div class="profile-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <h1 class="name">أحمد م. ت. أبو عرمانة</h1>
                 <p class="title">مطور Backend</p>
+                <div class="title-underline"></div>
+                
                 <div class="contact-grid">
                     <a href="tel:+970567809047" class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>9047 780 56 970+</span>
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span>+970 56 780 9047</span>
                     </a>
                     <a href="mailto:ahmedabuarmana.job@gmail.com" class="contact-item">
-                        <i class="fas fa-envelope"></i>
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
                         <span>ahmedabuarmana.job@gmail.com</span>
                     </a>
                     <a href="#" class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>فلسطين، قطاع غزة، دير البلح</span>
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span>دير البلح، قطاع غزة، فلسطين</span>
                     </a>
                 </div>
             </div>
@@ -43,70 +64,97 @@
 
         <main class="main-content">
             <!-- الملخص المهني -->
-            <section class="section">
-                <h2 class="section-title">الملخص المهني</h2>
-                <p class="summary">
-                    مطور Backend طموح ومتعلّم ذاتيًا، شغوف بإنشاء أنظمة قوية وفعالة وقابلة للتوسع. أمتلك أساسًا تقنيًا متينًا في لغة Python
-                    وإطارات عمل مثل Django، إلى جانب خبرة في تصميم قواعد البيانات وإدارة SQL. أطمح للحصول على وظيفة مبتدئة كمطور Backend
-                    لتطبيق المهارات المكتسبة من مشاريعي الشخصية والدورات عبر الإنترنت في بيئة مهنية ديناميكية، والمساهمة بفعالية في تحقيق أهداف الفريق.
-                </p>
+            <section class="section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h2 class="section-title">الملخص المهني</h2>
+                </div>
+                <div class="summary-card">
+                    <p class="summary">
+                        مطور Backend طموح ومتعلم ذاتياً بشغف عميق لبناء أنظمة قوية وفعالة وقابلة للتطوير. أمتلك أساساً تقنياً متيناً في Python وأطر العمل مثل Django، بالإضافة إلى خبرة في تصميم قواعد البيانات وإدارة SQL. حريص على تأمين منصب كمطور Backend على مستوى المبتدئين لتطبيق المهارات المكتسبة من المشاريع الشخصية والدورات عبر الإنترنت في بيئة مهنية ديناميكية، والمساهمة بفعالية في أهداف الفريق.
+                    </p>
+                </div>
             </section>
 
             <!-- المهارات التقنية -->
-            <section class="section">
-                <h2 class="section-title">المهارات التقنية</h2>
+            <section class="section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h2 class="section-title">المهارات التقنية</h2>
+                </div>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h4><i class="fab fa-html5"></i> الواجهة الأمامية - Frontend</h4>
+                        <div class="skill-category-header">
+                            <i class="fab fa-html5"></i>
+                            <h4>Frontend</h4>
+                        </div>
                         <div class="skill-tags">
                             <span class="skill-tag">HTML5</span>
                             <span class="skill-tag">CSS3</span>
                             <span class="skill-tag">Bootstrap</span>
-                            <span class="skill-tag">JavaScript (أساسيات)</span>
+                            <span class="skill-tag">JavaScript</span>
                         </div>
                     </div>
                     
                     <div class="skill-category">
-                        <h4><i class="fas fa-code"></i> لغات البرمجة</h4>
+                        <div class="skill-category-header">
+                            <i class="fas fa-code"></i>
+                            <h4>لغات البرمجة</h4>
+                        </div>
                         <div class="skill-tags">
                             <span class="skill-tag">Python</span>
                             <span class="skill-tag">Java</span>
                             <span class="skill-tag">C</span>
                             <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">JavaScript (أساسيات)</span>
                         </div>
                     </div>
                     
                     <div class="skill-category">
-                        <h4><i class="fas fa-server"></i> أُطر العمل (Backend)</h4>
+                        <div class="skill-category-header">
+                            <i class="fas fa-server"></i>
+                            <h4>أطر عمل Backend</h4>
+                        </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">Django (متقدم)</span>
-                            <span class="skill-tag">Flask (متوسط)</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Flask</span>
                         </div>
                     </div>
                     
                     <div class="skill-category">
-                        <h4><i class="fas fa-database"></i> قواعد البيانات</h4>
+                        <div class="skill-category-header">
+                            <i class="fas fa-database"></i>
+                            <h4>قواعد البيانات</h4>
+                        </div>
                         <div class="skill-tags">
                             <span class="skill-tag">SQLite3</span>
+                            <span class="skill-tag">SQL</span>
                         </div>
                     </div>
                     
                     <div class="skill-category">
-                        <h4><i class="fas fa-tools"></i> تقنيات أخرى</h4>
+                        <div class="skill-category-header">
+                            <i class="fas fa-tools"></i>
+                            <h4>تقنيات أخرى</h4>
+                        </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">Git, GitHub</span>
-                            <span class="skill-tag">واجهات RESTful</span>
-                            <span class="skill-tag">المصادقة والتحقق من الصلاحيات</span>
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">المصادقة</span>
                             <span class="skill-tag">ORM</span>
-                            <span class="skill-tag">سطر أوامر Linux</span>
-                            <span class="skill-tag">البيئات الافتراضية</span>
-                            <span class="skill-tag">قوالب Jinja2</span>
+                            <span class="skill-tag">Linux CLI</span>
+                            <span class="skill-tag">Jinja2</span>
                         </div>
                     </div>
                     
                     <div class="skill-category">
-                        <h4><i class="fas fa-cloud"></i> السحابة والنشر</h4>
+                        <div class="skill-category-header">
+                            <i class="fas fa-cloud"></i>
+                            <h4>السحابة والنشر</h4>
+                        </div>
                         <div class="skill-tags">
                             <span class="skill-tag">GitHub Pages</span>
                             <span class="skill-tag">Render</span>
@@ -118,192 +166,286 @@
             </section>
 
             <!-- المشاريع الشخصية -->
-            <section class="section">
-                <h2 class="section-title">المشاريع الشخصية</h2>
+            <section class="section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h2 class="section-title">المشاريع الشخصية</h2>
+                </div>
                 
-                <!-- مشروع 1 -->
+                <!-- المشروع 1 -->
                 <div class="project">
                     <div class="project-header">
-                        <h3 class="project-title">Commerce - منصة مزادات مبنية بـ Django</h3>
+                        <h3 class="project-title">
+                            <span class="project-number">01</span>
+                            Commerce - منصة مزادات Django
+                        </h3>
                         <div class="project-links">
                             <a href="https://github.com/ahmed-abuarmana/Commerce" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> عرض على GitHub
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
                             </a>
                             <a href="https://commerce-0uak.onrender.com" target="_blank" class="project-link demo-link">
-                                <i class="fas fa-external-link-alt"></i> عرض مباشر
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>عرض حي</span>
                             </a>
                         </div>
                     </div>
                     
                     <p class="project-description">
-                        منصة مزادات إلكترونية مبنية على Django، تتيح للمستخدمين إنشاء قوائم، المزايدة، إضافة عناصر لقائمة المراقبة الشخصية،
-                        والتعليق على القوائم في الوقت الفعلي. مستوحاة من أنظمة المزادات الإلكترونية مثل eBay.
+                        منصة مزادات للتجارة الإلكترونية مبنية باستخدام Django حيث يمكن للمستخدمين إنشاء قوائم، تقديم عطاءات، إضافة عناصر إلى قائمة المراقبة الشخصية، والتعليق على القوائم في الوقت الفعلي. مستوحاة من أنظمة المزادات عبر الإنترنت مثل eBay.
                     </p>
                     
-                    <p class="tech-stack"><strong>التقنيات المستخدمة:</strong> Python, Django, SQLite, HTML, CSS, Bootstrap</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Django</span>
+                        <span class="tech-badge">SQLite</span>
+                        <span class="tech-badge">Bootstrap</span>
+                    </div>
                     
                     <div class="features-list">
-                        <strong>الميزات الرئيسية:</strong>
+                        <h4>الميزات الرئيسية:</h4>
                         <ul>
-                            <li>تسجيل دخول/خروج وإنشاء حساب</li>
-                            <li>إنشاء وإدارة قوائم المزادات</li>
-                            <li>نظام مزايدة مع تحديث تلقائي لأعلى سعر</li>
-                            <li>قائمة مراقبة للعناصر المفضلة</li>
-                            <li>نظام التعليقات على صفحات المزادات</li>
-                            <li>تصفية القوائم حسب التصنيفات</li>
+                            <li><i class="fas fa-check-circle"></i> نظام مصادقة المستخدم</li>
+                            <li><i class="fas fa-check-circle"></i> إنشاء وإدارة قوائم المزادات</li>
+                            <li><i class="fas fa-check-circle"></i> نظام المزايدة في الوقت الفعلي</li>
+                            <li><i class="fas fa-check-circle"></i> ميزة تتبع قائمة المراقبة</li>
+                            <li><i class="fas fa-check-circle"></i> نظام التعليقات والمناقشات</li>
+                            <li><i class="fas fa-check-circle"></i> التصفية بناءً على الفئة</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- مشروع 2 -->
+                <!-- المشروع 2 -->
                 <div class="project">
                     <div class="project-header">
-                        <h3 class="project-title">ويكي موسوعة</h3>
+                        <h3 class="project-title">
+                            <span class="project-number">02</span>
+                            Wiki Encyclopedia
+                        </h3>
                         <div class="project-links">
                             <a href="https://github.com/ahmed-abuarmana/wiki" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> عرض على GitHub
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
                             </a>
                             <a href="https://wiki-arsv.onrender.com/" target="_blank" class="project-link demo-link">
-                                <i class="fas fa-external-link-alt"></i> عرض مباشر
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>عرض حي</span>
                             </a>
                         </div>
                     </div>
 
                     <p class="project-description">
-                        تطبيق ويب موسوعي مبني على Django مستوحى من ويكيبيديا، يسمح للمستخدمين بتصفح المقالات والبحث فيها وإنشائها وتحريرها باستخدام تنسيق Markdown.
+                        تطبيق ويب موسوعة مبنى باستخدام Django مستوحى من Wikipedia، يسمح للمستخدمين بتصفح المقالات والبحث فيها وإنشائها وتحريرها باستخدام واجهة مستخدم سهلة الاستخدام وتنسيق Markdown.
                     </p>
 
-                    <p class="tech-stack"><strong>التقنيات المستخدمة:</strong> Python, Django, HTML, CSS</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Django</span>
+                        <span class="tech-badge">Markdown</span>
+                        <span class="tech-badge">HTML/CSS</span>
+                    </div>
 
                     <div class="features-list">
-                        <strong>الميزات الرئيسية:</strong>
+                        <h4>الميزات الرئيسية:</h4>
                         <ul>
-                            <li>دعم Markdown لإنشاء وتحرير المحتوى</li>
-                            <li>بحث نصي كامل</li>
-                            <li>إمكانية إنشاء، تحديث، وعرض المقالات</li>
-                            <li>مولد مقالات عشوائية</li>
+                            <li><i class="fas fa-check-circle"></i> دعم محتوى Markdown</li>
+                            <li><i class="fas fa-check-circle"></i> وظيفة البحث النصي الكامل</li>
+                            <li><i class="fas fa-check-circle"></i> إنشاء وتحرير مداخل الموسوعة</li>
+                            <li><i class="fas fa-check-circle"></i> مولد المقالات العشوائية</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- مشروع 3 -->
+                <!-- المشروع 3 -->
                 <div class="project">
                     <div class="project-header">
-                        <h3 class="project-title">استنساخ محرك بحث Google</h3>
+                        <h3 class="project-title">
+                            <span class="project-number">03</span>
+                            نسخة Google Search
+                        </h3>
                         <div class="project-links">
                             <a href="https://github.com/ahmed-abuarmana/Google-Search" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> عرض على GitHub
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
                             </a>
                             <a href="https://ahmed-abuarmana.github.io/Google-Search/" target="_blank" class="project-link demo-link">
-                                <i class="fas fa-external-link-alt"></i> عرض مباشر
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>عرض حي</span>
                             </a>
                         </div>
                     </div>
                     
                     <p class="project-description">
-                        نسخة أمامية من واجهة Google للبحث، مع دعم البحث الأساسي، بحث الصور، وخيارات البحث المتقدم.
+                        نسخة واجهة مستخدم Google مع الوظائف الكاملة بما في ذلك البحث، وبحث الصور، وخيارات البحث المتقدم.
                     </p>
                     
-                    <p class="tech-stack"><strong>التقنيات المستخدمة:</strong> HTML, CSS</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">التصميم المتجاوب</span>
+                    </div>
                     
                     <div class="features-list">
-                        <strong>الميزات الرئيسية:</strong>
+                        <h4>الميزات الرئيسية:</h4>
                         <ul>
-                            <li>تصميم متجاوب يعمل على جميع الأجهزة</li>
-                            <li>واجهة بحث تفاعلية مشابهة لـ Google</li>
-                            <li>خيارات بحث متعددة (الكل، الصور، البحث المتقدم)</li>
+                            <li><i class="fas fa-check-circle"></i> تصميم متجاوب بالكامل</li>
+                            <li><i class="fas fa-check-circle"></i> واجهة بحث تفاعلية</li>
+                            <li><i class="fas fa-check-circle"></i> خيارات بحث متعددة</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- مشروع 4 -->
+                <!-- المشروع 4 -->
                 <div class="project">
                     <div class="project-header">
-                        <h3 class="project-title">الموقع الشخصي (Portfolio)</h3>
+                        <h3 class="project-title">
+                            <span class="project-number">04</span>
+                            موقع Portfolio الشخصي
+                        </h3>
                         <div class="project-links">
                             <a href="https://github.com/ahmed-abuarmana/ahmed-abuarmana.github.io.git" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> عرض على GitHub
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
                             </a>
                             <a href="https://ahmed-abuarmana.github.io/" target="_blank" class="project-link demo-link">
-                                <i class="fas fa-external-link-alt"></i> عرض مباشر
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>عرض حي</span>
                             </a>
                         </div>
                     </div>
                     
                     <p class="project-description">
-                        موقعي الشخصي لعرض مهاراتي ومشاريعي ومعلومات الاتصال، مع تصميم عصري وعناصر تفاعلية.
+                        موقعي الشخصي لعرض أعمالي، يعرض مهاراتي ومشاريعي ومعلومات الاتصال بتصميم حديث وعناصر تفاعلية.
                     </p>
                     
-                    <p class="tech-stack"><strong>التقنيات المستخدمة:</strong> HTML, CSS</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                    </div>
                     
                     <div class="features-list">
-                        <strong>الميزات الرئيسية:</strong>
+                        <h4>الميزات الرئيسية:</h4>
                         <ul>
-                            <li>تصميم عصري ومتجاوب</li>
-                            <li>عناصر واجهة مستخدم تفاعلية</li>
-                            <li>عرض المشاريع بالتفصيل</li>
-                            <li>نموذج للتواصل</li>
+                            <li><i class="fas fa-check-circle"></i> تصميم حديث ومتجاوب</li>
+                            <li><i class="fas fa-check-circle"></i> عناصر واجهة مستخدم تفاعلية</li>
+                            <li><i class="fas fa-check-circle"></i> عرض المشاريع</li>
+                            <li><i class="fas fa-check-circle"></i> دمج نموذج الاتصال</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
             <!-- التعليم -->
-            <section class="section">
-                <h2 class="section-title">التعليم</h2>
-                <div class="education-item">
-                    <h3 class="item-title">بكالوريوس هندسة أنظمة الحاسوب</h3>
-                    <p class="item-institution">جامعة الأزهر - غزة</p>
-                    <p class="item-date">تاريخ التخرج المتوقع: سبتمبر 2026</p>
+            <section class="section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h2 class="section-title">التعليم</h2>
                 </div>
                 
-                <div class="education-item">
-                    <h3 class="item-title">الثانوية العامة - الفرع العلمي</h3>
-                    <p class="item-institution">مدرسة الياسين الثانوية</p>
-                    <p class="item-date">تاريخ التخرج: يوليو 2022</p>
-                    <p class="item-gpa">المعدل: 3.7/4.0</p>
+                <div class="timeline">
+                    <div class="education-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="item-title">بكالوريوس هندسة أنظمة الحاسوب</h3>
+                            <p class="item-institution">جامعة الأزهر بغزة</p>
+                            <p class="item-date"><i class="far fa-calendar"></i> موعد التخرج المتوقع: سبتمبر 2026</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="item-title">الثانوية العامة - الفرع العلمي</h3>
+                            <p class="item-institution">مدرسة الياسين الثانوية</p>
+                            <p class="item-date"><i class="far fa-calendar"></i> تاريخ التخرج: يوليو 2022</p>
+                            <p class="item-gpa"><i class="fas fa-star"></i> المعدل: 3.7/4.0</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- الدورات والشهادات -->
-            <section class="section">
-                <h2 class="section-title">الدورات والشهادات</h2>
-                <div class="certification-item">
-                    <h3 class="item-title">CS50x: مقدمة في علوم الحاسوب</h3>
-                    <p class="item-institution">المنصة: edX</p>
-                    <p class="item-date">تاريخ الإكمال: مايو 2025</p>
-                    <a href="https://courses.edx.org/certificates/22b4da40871e4b67a7d5b450dab0fe56" target="_blank" class="verification-link">
-                        <i class="fas fa-external-link-alt"></i> التحقق من الشهادة
-                    </a>
+            <section class="section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h2 class="section-title">الدورات والشهادات</h2>
                 </div>
                 
-                <div class="certification-item">
-                    <h3 class="item-title">مقدمة في البرمجة</h3>
-                    <p class="item-institution">المنصة: SATAR</p>
-                    <p class="item-date">تاريخ الإكمال: يناير 2025</p>
-                </div>
-                
-                <div class="certification-item">
-                    <h3 class="item-title">البدء مع Microsoft Excel</h3>
-                    <p class="item-institution">المنصة: Coursera</p>
-                    <p class="item-date">تاريخ الإكمال: يونيو 2025</p>
-                    <a href="https://coursera.org/verify/QT9T7EXREB8Q" target="_blank" class="verification-link">
-                        <i class="fas fa-external-link-alt"></i> التحقق من الشهادة
-                    </a>
+                <div class="certifications-grid">
+                    <div class="certification-item">
+                        <div class="cert-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="item-title">CS50x: مقدمة في علوم الحاسوب</h3>
+                        <p class="item-institution"><i class="fas fa-university"></i> edX</p>
+                        <p class="item-date"><i class="far fa-calendar-check"></i> مايو 2025</p>
+                        <a href="https://courses.edx.org/certificates/22b4da40871e4b67a7d5b450dab0fe56" target="_blank" class="verification-link">
+                            <i class="fas fa-external-link-alt"></i> التحقق من الشهادة
+                        </a>
+                    </div>
+                    
+                    <div class="certification-item">
+                        <div class="cert-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="item-title">مقدمة في البرمجة</h3>
+                        <p class="item-institution"><i class="fas fa-university"></i> SATAR</p>
+                        <p class="item-date"><i class="far fa-calendar-check"></i> يناير 2025</p>
+                    </div>
+                    
+                    <div class="certification-item">
+                        <div class="cert-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="item-title">بدء العمل مع Microsoft Excel</h3>
+                        <p class="item-institution"><i class="fas fa-university"></i> Coursera</p>
+                        <p class="item-date"><i class="far fa-calendar-check"></i> يونيو 2025</p>
+                        <a href="https://coursera.org/verify/QT9T7EXREB8Q" target="_blank" class="verification-link">
+                            <i class="fas fa-external-link-alt"></i> التحقق من الشهادة
+                        </a>
+                    </div>
                 </div>
             </section>
 
             <!-- اللغات -->
-            <section class="section">
-                <h2 class="section-title">اللغات</h2>
+            <section class="section fade-in">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h2 class="section-title">اللغات</h2>
+                </div>
                 <div class="languages-grid">
                     <div class="language-item">
-                        <div class="language-name">العربية</div>
-                        <div class="language-level">اللغة الأم</div>
+                        <div class="language-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="language-content">
+                            <div class="language-name">العربية</div>
+                            <div class="language-level">اللغة الأم</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="language-item">
-                        <div class="language-name">الإنجليزية</div>
-                        <div class="language-level">ممتاز</div>
+                        <div class="language-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="language-content">
+                            <div class="language-name">الإنجليزية</div>
+                            <div class="language-level">ممتاز</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -311,38 +453,77 @@
 
         <!-- الفوتر -->
         <footer class="footer">
-            <div class="footer-social">
-                <a href="https://wa.me/+970567809047" class="footer-social-link" target="_blank">
-                    <i class="fab fa-whatsapp footer-social-icon footer-whatsapp"></i>
-                </a>
+            <div class="footer-content">
+                <h3>لنتواصل</h3>
+                <div class="footer-social">
+                    <a href="https://wa.me/+970567809047" class="footer-social-link" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://t.me/ahmed_web2025" class="footer-social-link" target="_blank" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://github.com/Ahmed-Abuarmana" class="footer-social-link" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmed-abuarmana" class="footer-social-link" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:ahmedabuarmana.job@gmail.com" class="footer-social-link" target="_blank" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
                 
-                <a href="https://t.me/ahmed_web2025" class="footer-social-link" target="_blank">
-                    <i class="fab fa-telegram footer-social-icon footer-telegram"></i>
-                </a>
-                
-                <a href="https://github.com/Ahmed-Abuarmana" class="footer-social-link" target="_blank">
-                    <i class="fab fa-github footer-social-icon footer-github"></i>
-                </a>
-                
-                <a href="https://www.linkedin.com/in/ahmed-abuarmana" class="footer-social-link" target="_blank">
-                    <i class="fab fa-linkedin footer-social-icon footer-linkedin"></i>
-                </a>
-                
-                <a href="mailto:ahmedabuarmana.job@gmail.com" class="footer-social-link" target="_blank">
-                    <i class="fas fa-envelope footer-social-icon footer-email"></i>
-                </a>
+                <div class="footer-info">
+                    <p>&copy; 2025 أحمد م. ت. أبو عرمانة. جميع الحقوق محفوظة.</p>
+                    <p class="footer-update">آخر تحديث: أكتوبر 2025</p>
+                </div>
             </div>
-            
-            <p>أحمد محمد أبو عرمانة. جميع الحقوق محفوظة. &copy; 2025</p>
-            <p>آخر تحديث: سبتمبر 2025</p>
         </footer>
 
-        <!-- زر العودة للأعلى -->
-        <a href="#top" class="back-to-top">
+        <!-- العودة إلى الأعلى -->
+        <a href="#top" class="back-to-top" id="backToTop">
             <i class="fas fa-arrow-up"></i>
         </a>
     </div>
+
+    <script>
+        // تأثير الظهور عند التمرير
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // زر العودة إلى الأعلى
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // التمرير السلس
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
-
