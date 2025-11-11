@@ -1,69 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed M. T. Abuarmana - Web Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Ahmed M. T. Abuarmana - Backend Web Developer specializing in Python, Django, and Flask. Portfolio showcasing projects and skills.">
+    <meta name="keywords" content="Backend Developer, Python, Django, Flask, Web Development">
+    <meta name="author" content="Ahmed M. T. Abuarmana">
+    <title>Ahmed M. T. Abuarmana - Backend Developer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
 </head>
 
 <body>
-    <!-- Animated background elements -->
-    <div class="bg-animation">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
+    <!-- Loading -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
     </div>
 
-    <div class="container">
-        <!-- Language switcher with animation -->
-        <div class="language-switcher">
-            <a href="index-ar.html" class="lang-btn">
-                <i class="fas fa-globe"></i>
-                <span>العربية</span>
-            </a>
-        </div>
+    <!-- Background -->
+    <div class="bg-gradient"></div>
+    <div class="bg-mesh"></div>
 
-        <!-- Header with gradient and animations -->
-        <header class="header" id="top">
-            <div class="header-content">
-                <div class="profile-image-wrapper">
-                    <div class="profile-image">
-                        <i class="fas fa-user"></i>
-                    </div>
-                </div>
-                <h1 class="name">Ahmed M. T. Abuarmana</h1>
-                <p class="title">Backend Developer</p>
-                <div class="title-underline"></div>
-                
-                <div class="contact-grid">
-                    <a href="tel:+970567809047" class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <span>+970 56 780 9047</span>
-                    </a>
-                    <a href="mailto:ahmedabuarmana.job@gmail.com" class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <span>ahmedabuarmana.job@gmail.com</span>
-                    </a>
-                    <!-- <a href="#" class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <span>Deir Al Balah, Gaza Strip, Palestine</span>
-                    </a> -->
-                </div>
+    <!-- Language Switcher -->
+    <!-- <a href="index-ar.html" class="lang-switch">
+        <i class="fas fa-globe"></i>
+        <span>العربية</span>
+    </a> -->
+
+    <!-- Hero -->
+    <header class="hero" id="top">
+        <div class="hero-content">
+            <div class="avatar">
+                <i class="fas fa-user"></i>
             </div>
-        </header>
+            <h1>Ahmed M. T. Abuarmana</h1>
+            <p class="hero-subtitle">Backend Web Developer</p>
+            
+            <div class="contact-pills">
+                <a href="tel:+970567809047" class="pill">
+                    <div class="pill-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <span>+970 56 780 9047</span>
+                </a>
+                <a href="mailto:ahmedabuarmana.job@gmail.com" class="pill">
+                    <div class="pill-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span>ahmedabuarmana.job@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </header>
 
-        <main class="main-content">
-            <!-- Professional Summary -->
+    <div class="container">
+        <main>
+            <!-- Summary -->
             <section class="section fade-in">
                 <div class="section-header">
                     <div class="section-icon">
@@ -71,18 +68,16 @@
                     </div>
                     <h2 class="section-title">Professional Summary</h2>
                 </div>
-                <div class="summary-card">
-                    <p class="summary">
-                        Ambitious and self-taught Backend Developer with a deep passion for building robust, efficient, and scalable
-                        systems. Possess a solid technical foundation in Python and frameworks like Django, coupled with experience
-                        in database design and SQL management. Eager to secure an entry-level Backend Developer position to apply
-                        acquired skills from personal projects and online courses in a dynamic professional environment,
-                        contributing effectively to team goals.
-                    </p>
+                <div class="summary-box">
+                    Ambitious and self-taught Backend Developer with a deep passion for building robust, efficient, and scalable
+                    systems. Possess a solid technical foundation in Python and frameworks like Django, coupled with experience
+                    in database design and SQL management. Eager to secure an entry-level Backend Developer position to apply
+                    acquired skills from personal projects and online courses in a dynamic professional environment,
+                    contributing effectively to team goals.
                 </div>
             </section>
 
-            <!-- Technical Skills -->
+            <!-- Skills -->
             <section class="section fade-in">
                 <div class="section-header">
                     <div class="section-icon">
@@ -91,85 +86,85 @@
                     <h2 class="section-title">Technical Skills</h2>
                 </div>
                 <div class="skills-grid">
-                    <div class="skill-category">
-                        <div class="skill-category-header">
+                    <div class="skill-card">
+                        <div class="skill-header">
                             <i class="fab fa-html5"></i>
                             <h4>Frontend</h4>
                         </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">Bootstrap</span>
-                            <span class="skill-tag">JavaScript</span>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">JavaScript</span>
                         </div>
                     </div>
                     
-                    <div class="skill-category">
-                        <div class="skill-category-header">
+                    <div class="skill-card">
+                        <div class="skill-header">
                             <i class="fas fa-code"></i>
                             <h4>Programming Languages</h4>
                         </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">C</span>
-                            <span class="skill-tag">SQL</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">C</span>
+                            <span class="tag">SQL</span>
                         </div>
                     </div>
                     
-                    <div class="skill-category">
-                        <div class="skill-category-header">
+                    <div class="skill-card">
+                        <div class="skill-header">
                             <i class="fas fa-server"></i>
                             <h4>Backend Frameworks</h4>
                         </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">Django</span>
-                            <span class="skill-tag">Flask</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">Flask</span>
                         </div>
                     </div>
                     
-                    <div class="skill-category">
-                        <div class="skill-category-header">
+                    <div class="skill-card">
+                        <div class="skill-header">
                             <i class="fas fa-database"></i>
                             <h4>Databases</h4>
                         </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">SQLite3</span>
-                            <span class="skill-tag">SQL</span>
+                            <span class="tag">SQLite3</span>
+                            <span class="tag">SQL</span>
                         </div>
                     </div>
                     
-                    <div class="skill-category">
-                        <div class="skill-category-header">
+                    <div class="skill-card">
+                        <div class="skill-header">
                             <i class="fas fa-tools"></i>
                             <h4>Other Technologies</h4>
                         </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">Git & GitHub</span>
-                            <span class="skill-tag">RESTful APIs</span>
-                            <span class="skill-tag">Authentication</span>
-                            <span class="skill-tag">ORM</span>
-                            <span class="skill-tag">Linux CLI</span>
-                            <span class="skill-tag">Jinja2</span>
+                            <span class="tag">Git & GitHub</span>
+                            <span class="tag">RESTful APIs</span>
+                            <span class="tag">Authentication</span>
+                            <span class="tag">ORM</span>
+                            <span class="tag">Linux CLI</span>
+                            <span class="tag">Jinja2</span>
                         </div>
                     </div>
                     
-                    <div class="skill-category">
-                        <div class="skill-category-header">
+                    <div class="skill-card">
+                        <div class="skill-header">
                             <i class="fas fa-cloud"></i>
                             <h4>Cloud & Deployment</h4>
                         </div>
                         <div class="skill-tags">
-                            <span class="skill-tag">GitHub Pages</span>
-                            <span class="skill-tag">Render</span>
-                            <span class="skill-tag">Heroku</span>
-                            <span class="skill-tag">PythonAnywhere</span>
+                            <span class="tag">GitHub Pages</span>
+                            <span class="tag">Render</span>
+                            <span class="tag">Heroku</span>
+                            <span class="tag">PythonAnywhere</span>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Personal Projects -->
+            <!-- Projects -->
             <section class="section fade-in">
                 <div class="section-header">
                     <div class="section-icon">
@@ -179,36 +174,36 @@
                 </div>
                 
                 <!-- Project 1 -->
-                <div class="project">
-                    <div class="project-header">
-                        <h3 class="project-title">
-                            <span class="project-number">01</span>
-                            Commerce - Django Auctions Platform
-                        </h3>
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-title-wrap">
+                            <div class="project-num">01</div>
+                            <h3 class="project-title">Commerce - Django Auctions Platform</h3>
+                        </div>
                         <div class="project-links">
-                            <a href="https://github.com/ahmed-abuarmana/Commerce" target="_blank" class="project-link">
+                            <a href="https://github.com/ahmed-abuarmana/Commerce" target="_blank" class="btn btn-outline">
                                 <i class="fab fa-github"></i>
                                 <span>GitHub</span>
                             </a>
-                            <a href="https://commerce-0uak.onrender.com" target="_blank" class="project-link demo-link">
+                            <a href="https://commerce-0uak.onrender.com" target="_blank" class="btn btn-primary">
                                 <i class="fas fa-external-link-alt"></i>
                                 <span>Live Demo</span>
                             </a>
                         </div>
                     </div>
                     
-                    <p class="project-description">
+                    <p class="project-desc">
                         A Django-based e-commerce auctions platform where users can create listings, place bids, add items to a personal watchlist, and comment on listings in real-time. Inspired by online auction systems like eBay.
                     </p>
                     
-                    <div class="tech-stack">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Django</span>
-                        <span class="tech-badge">SQLite</span>
-                        <span class="tech-badge">Bootstrap</span>
+                    <div class="tech-badges">
+                        <span class="badge">Python</span>
+                        <span class="badge">Django</span>
+                        <span class="badge">SQLite</span>
+                        <span class="badge">Bootstrap</span>
                     </div>
                     
-                    <div class="features-list">
+                    <div class="features">
                         <h4>Key Features:</h4>
                         <ul>
                             <li><i class="fas fa-check-circle"></i> User authentication system</li>
@@ -219,39 +214,39 @@
                             <li><i class="fas fa-check-circle"></i> Category-based filtering</li>
                         </ul>
                     </div>
-                </div>
+                </article>
 
                 <!-- Project 2 -->
-                <div class="project">
-                    <div class="project-header">
-                        <h3 class="project-title">
-                            <span class="project-number">02</span>
-                            Wiki Encyclopedia
-                        </h3>
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-title-wrap">
+                            <div class="project-num">02</div>
+                            <h3 class="project-title">Wiki Encyclopedia</h3>
+                        </div>
                         <div class="project-links">
-                            <a href="https://github.com/ahmed-abuarmana/wiki" target="_blank" class="project-link">
+                            <a href="https://github.com/ahmed-abuarmana/wiki" target="_blank" class="btn btn-outline">
                                 <i class="fab fa-github"></i>
                                 <span>GitHub</span>
                             </a>
-                            <a href="https://wiki-arsv.onrender.com/" target="_blank" class="project-link demo-link">
+                            <a href="https://wiki-arsv.onrender.com/" target="_blank" class="btn btn-primary">
                                 <i class="fas fa-external-link-alt"></i>
                                 <span>Live Demo</span>
                             </a>
                         </div>
                     </div>
 
-                    <p class="project-description">
+                    <p class="project-desc">
                         A Django-based encyclopedia web app inspired by Wikipedia, allowing users to browse, search, create, and edit articles using a user-friendly interface and Markdown formatting.
                     </p>
 
-                    <div class="tech-stack">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Django</span>
-                        <span class="tech-badge">Markdown</span>
-                        <span class="tech-badge">HTML/CSS</span>
+                    <div class="tech-badges">
+                        <span class="badge">Python</span>
+                        <span class="badge">Django</span>
+                        <span class="badge">Markdown</span>
+                        <span class="badge">HTML/CSS</span>
                     </div>
 
-                    <div class="features-list">
+                    <div class="features">
                         <h4>Key Features:</h4>
                         <ul>
                             <li><i class="fas fa-check-circle"></i> Markdown content support</li>
@@ -260,38 +255,38 @@
                             <li><i class="fas fa-check-circle"></i> Random article generator</li>
                         </ul>
                     </div>
-                </div>
+                </article>
 
                 <!-- Project 3 -->
-                <div class="project">
-                    <div class="project-header">
-                        <h3 class="project-title">
-                            <span class="project-number">03</span>
-                            Google Search Clone
-                        </h3>
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-title-wrap">
+                            <div class="project-num">03</div>
+                            <h3 class="project-title">Google Search Clone</h3>
+                        </div>
                         <div class="project-links">
-                            <a href="https://github.com/ahmed-abuarmana/Google-Search" target="_blank" class="project-link">
+                            <a href="https://github.com/ahmed-abuarmana/Google-Search" target="_blank" class="btn btn-outline">
                                 <i class="fab fa-github"></i>
                                 <span>GitHub</span>
                             </a>
-                            <a href="https://ahmed-abuarmana.github.io/Google-Search/" target="_blank" class="project-link demo-link">
+                            <a href="https://ahmed-abuarmana.github.io/Google-Search/" target="_blank" class="btn btn-primary">
                                 <i class="fas fa-external-link-alt"></i>
                                 <span>Live Demo</span>
                             </a>
                         </div>
                     </div>
                     
-                    <p class="project-description">
+                    <p class="project-desc">
                         A front-end clone of Google's search interface with full functionality including search, images search, and advanced search options.
                     </p>
                     
-                    <div class="tech-stack">
-                        <span class="tech-badge">HTML5</span>
-                        <span class="tech-badge">CSS3</span>
-                        <span class="tech-badge">Responsive Design</span>
+                    <div class="tech-badges">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">Responsive Design</span>
                     </div>
                     
-                    <div class="features-list">
+                    <div class="features">
                         <h4>Key Features:</h4>
                         <ul>
                             <li><i class="fas fa-check-circle"></i> Fully responsive design</li>
@@ -299,38 +294,38 @@
                             <li><i class="fas fa-check-circle"></i> Multiple search options</li>
                         </ul>
                     </div>
-                </div>
+                </article>
 
                 <!-- Project 4 -->
-                <div class="project">
-                    <div class="project-header">
-                        <h3 class="project-title">
-                            <span class="project-number">04</span>
-                            Personal Portfolio Website
-                        </h3>
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-title-wrap">
+                            <div class="project-num">04</div>
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                        </div>
                         <div class="project-links">
-                            <a href="https://github.com/ahmed-abuarmana/ahmed-abuarmana.github.io.git" target="_blank" class="project-link">
+                            <a href="https://github.com/ahmed-abuarmana/ahmed-abuarmana.github.io.git" target="_blank" class="btn btn-outline">
                                 <i class="fab fa-github"></i>
                                 <span>GitHub</span>
                             </a>
-                            <a href="https://ahmed-abuarmana.github.io/" target="_blank" class="project-link demo-link">
+                            <a href="https://ahmed-abuarmana.github.io/" target="_blank" class="btn btn-primary">
                                 <i class="fas fa-external-link-alt"></i>
                                 <span>Live Demo</span>
                             </a>
                         </div>
                     </div>
                     
-                    <p class="project-description">
+                    <p class="project-desc">
                         My personal portfolio website, showcasing my skills, projects, and contact information with modern design and interactive elements.
                     </p>
                     
-                    <div class="tech-stack">
-                        <span class="tech-badge">HTML5</span>
-                        <span class="tech-badge">CSS3</span>
-                        <span class="tech-badge">JavaScript</span>
+                    <div class="tech-badges">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">JavaScript</span>
                     </div>
                     
-                    <div class="features-list">
+                    <div class="features">
                         <h4>Key Features:</h4>
                         <ul>
                             <li><i class="fas fa-check-circle"></i> Modern, responsive design</li>
@@ -339,39 +334,39 @@
                             <li><i class="fas fa-check-circle"></i> Contact form integration</li>
                         </ul>
                     </div>
-                </div>
+                </article>
                 
                 <!-- Project 5 -->
-                <div class="project">
-                    <div class="project-header">
-                        <h3 class="project-title">
-                            <span class="project-number">05</span>
-                            Taif Gaza Platform
-                        </h3>
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-title-wrap">
+                            <div class="project-num">05</div>
+                            <h3 class="project-title">Taif Gaza Platform</h3>
+                        </div>
                         <div class="project-links">
-                            <a href="https://github.com/ahmed-abuarmana/taif-gaza" target="_blank" class="project-link">
+                            <a href="https://github.com/ahmed-abuarmana/taif-gaza" target="_blank" class="btn btn-outline">
                                 <i class="fab fa-github"></i>
                                 <span>GitHub</span>
                             </a>
-                            <a href="https://taif-gaza.onrender.com/" target="_blank" class="project-link demo-link">
+                            <a href="https://taif-gaza.onrender.com/" target="_blank" class="btn btn-primary">
                                 <i class="fas fa-external-link-alt"></i>
                                 <span>Live Demo</span>
                             </a>
                         </div>
                     </div>
                     
-                    <p class="project-description">
+                    <p class="project-desc">
                         A dynamic web platform developed for Taif Gaza, designed to manage and showcase community initiatives with a modern responsive interface.
                     </p>
                     
-                    <div class="tech-stack">
-                        <span class="tech-badge">HTML5</span>
-                        <span class="tech-badge">CSS3</span>
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">Responsive Design</span>
+                    <div class="tech-badges">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Responsive Design</span>
                     </div>
                     
-                    <div class="features-list">
+                    <div class="features">
                         <h4>Key Features:</h4>
                         <ul>
                             <li><i class="fas fa-check-circle"></i> Dynamic content management</li>
@@ -379,53 +374,169 @@
                             <li><i class="fas fa-check-circle"></i> Integrated project and activity pages</li>
                         </ul>
                     </div>
-                </div>
+                </article>
 
                 <!-- Project 6 -->
-                <div class="project">
-                    <div class="project-header">
-                        <h3 class="project-title">
-                            <span class="project-number">06</span>
-                            Medad Platform
-                        </h3>
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-title-wrap">
+                            <div class="project-num">06</div>
+                            <h3 class="project-title">Medad Platform – Data Backup & Management</h3>
+                        </div>
                         <div class="project-links">
-                            <a href="https://github.com/ahmed-abuarmana/Medad" target="_blank" class="project-link">
+                            <a href="https://github.com/ahmed-abuarmana/Medad" target="_blank" class="btn btn-outline">
                                 <i class="fab fa-github"></i>
                                 <span>GitHub</span>
                             </a>
-                            <a href="https://medad.pythonanywhere.com/" target="_blank" class="project-link demo-link">
+                            <a href="https://medad.pythonanywhere.com/" target="_blank" class="btn btn-primary">
                                 <i class="fas fa-external-link-alt"></i>
                                 <span>Live Demo</span>
                             </a>
                         </div>
                     </div>
-                    
-                    <p class="project-description">
-                        A professional and modern web platform built with Python and Flask, hosted on PythonAnywhere. The system supports secure authentication and includes an automated backup process to Google Drive for database preservation. 
-                        <br><br>
-                        <strong>Demo Access:</strong> Use the following credentials to explore the platform — <em>email:</em> ahmed.mo.010203@gmail.com | <em>password:</em> Test@1212
+
+                    <p class="project-desc">
+                        A professional and modern web platform developed using <strong>Python</strong> and <strong>Flask</strong>, 
+                        designed to securely manage user data and perform automated database backups to Google Drive. 
+                        The system integrates authentication, backup scheduling, and an intuitive admin interface. 
+                        Fully deployed and operational on <strong>PythonAnywhere</strong>.
                     </p>
-                    
-                    <div class="tech-stack">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">HTML5</span>
-                        <span class="tech-badge">CSS3</span>
-                        <span class="tech-badge">Django</span>
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">Google Drive API</span>
+
+                    <div class="tech-badges">
+                        <span class="badge">Python</span>
+                        <span class="badge">Flask</span>
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">Google Drive API</span>
+                        <span class="badge">PythonAnywhere</span>
                     </div>
-                    
-                    <div class="features-list">
+
+                    <div class="features">
                         <h4>Key Features:</h4>
                         <ul>
-                            <li><i class="fas fa-check-circle"></i> Secure login system with email and password</li>
-                            <li><i class="fas fa-check-circle"></i> Fully deployed and functional on PythonAnywhere</li>
-                            <li><i class="fas fa-check-circle"></i> Automated database backup to Google Drive</li>
-                            <li><i class="fas fa-check-circle"></i> Modern UI with professional and responsive design</li>
+                            <li><i class="fas fa-check-circle"></i> Secure authentication system (email and password)</li>
+                            <li><i class="fas fa-check-circle"></i> Automated daily database backups to Google Drive</li>
+                            <li><i class="fas fa-check-circle"></i> Flask-based admin dashboard for managing users and data</li>
+                            <li><i class="fas fa-check-circle"></i> Fully hosted and functional deployment on PythonAnywhere</li>
+                            <li><i class="fas fa-check-circle"></i> Responsive and user-friendly modern interface</li>
                         </ul>
                     </div>
-                </div>
 
+                    <div class="demo-box">
+                        <h4>Demo Access:</h4>
+                        <table class="demo-table">
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Email / Username</th>
+                                    <th>Password</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Admin Account</td>
+                                    <td><code>ahmed.mo.010203@gmail.com</code></td>
+                                    <td><code>Test@1212</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="note-box">
+                        <strong>Important note:</strong>
+                        <p>
+                            The Medad platform is a demonstration system built for educational and development purposes. 
+                            No real user or backup data is stored or processed within this demo version.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Project 7 -->
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-title-wrap">
+                            <div class="project-num">07</div>
+                            <h3 class="project-title">Bakeries & Charity Kitchens Management</h3>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ahmed-abuarmana/baker-data-management" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-github"></i>
+                                <span>Repository</span>
+                            </a>
+                            <a href="https://baker-data-render.example.com" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <p class="project-desc">
+                        A Django-based data management system for bakeries, charitable kitchens and community food centers
+                        used in the "Al-Faris Al-Shahim 3" operation. The system organizes, stores and helps analyze operational
+                        data with role-based access control and export capabilities.
+                    </p>
+
+                    <div class="tech-badges">
+                        <span class="badge">Python</span>
+                        <span class="badge">Django</span>
+                        <span class="badge">SQLite3</span>
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">Responsive Design</span>
+                        <span class="badge">Render</span>
+                    </div>
+
+                    <div class="features">
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> User authentication (login / logout)</li>
+                            <li><i class="fas fa-check-circle"></i> Role-based accounts: Site Developer, Project Manager, Data Entry, Guest</li>
+                            <li><i class="fas fa-check-circle"></i> Full CRUD operations: create, read, update, delete records</li>
+                            <li><i class="fas fa-check-circle"></i> Search across datasets</li>
+                            <li><i class="fas fa-check-circle"></i> Export reports and spreadsheets (Excel)</li>
+                            <li><i class="fas fa-check-circle"></i> Data organization and basic analysis tools</li>
+                        </ul>
+                    </div>
+
+                    <div class="demo-box">
+                        <h4>Demo accounts (use to test roles):</h4>
+                        <table class="demo-table">
+                            <thead>
+                                <tr>
+                                    <th>Role</th>
+                                    <th>Username</th>
+                                    <th>Password</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Site Manager</td>
+                                    <td><code>ManagerData</code></td>
+                                    <td><code>#$1940Manager</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Data Entry</td>
+                                    <td><code>DataEntryEmp</code></td>
+                                    <td><code>@@Entry100200</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Guest (read-only)</td>
+                                    <td><code>Guest1</code></td>
+                                    <td><code>$JustForSeen001</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="note-box">
+                        <strong>Important note:</strong>
+                        <p>
+                            All records inside this platform are fictional and for demonstration only.
+                            This copy is a preview for review and not the original production dataset.
+                        </p>
+                    </div>
+                </article>
             </section>
 
             <!-- Education -->
@@ -438,28 +549,32 @@
                 </div>
                 
                 <div class="timeline">
-                    <div class="education-item">
+                    <article class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="item-title">Bachelor of Computer System Engineering</h3>
-                            <p class="item-institution">Al-Azhar University of Gaza</p>
-                            <p class="item-date"><i class="far fa-calendar"></i> Expected Graduation: September 2026</p>
+                            <h3>Bachelor of Computer System Engineering</h3>
+                            <p class="institution">Al-Azhar University of Gaza</p>
+                            <div class="timeline-meta">
+                                <span><i class="far fa-calendar"></i> Expected Graduation: September 2026</span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                     
-                    <div class="education-item">
+                    <article class="timeline-item">
                         <div class="timeline-marker"></div>
                         <div class="timeline-content">
-                            <h3 class="item-title">High School - Science Branch</h3>
-                            <p class="item-institution">Al-Yassin Secondary School</p>
-                            <p class="item-date"><i class="far fa-calendar"></i> Graduation Date: Jul 2022</p>
-                            <p class="item-gpa"><i class="fas fa-star"></i> GPA: 3.7/4.0</p>
+                            <h3>High School - Science Branch</h3>
+                            <p class="institution">Al-Yassin Secondary School</p>
+                            <div class="timeline-meta">
+                                <span><i class="far fa-calendar"></i> Graduation: Jul 2022</span>
+                                <span><i class="fas fa-star"></i> GPA: 3.7/4.0</span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </section>
 
-            <!-- Courses and Certifications -->
+            <!-- Certifications -->
             <section class="section fade-in">
                 <div class="section-header">
                     <div class="section-icon">
@@ -468,39 +583,39 @@
                     <h2 class="section-title">Courses & Certifications</h2>
                 </div>
                 
-                <div class="certifications-grid">
-                    <div class="certification-item">
+                <div class="cert-grid">
+                    <article class="cert-card">
                         <div class="cert-icon">
                             <i class="fas fa-award"></i>
                         </div>
-                        <h3 class="item-title">CS50x: Introduction to Computer Science</h3>
-                        <p class="item-institution"><i class="fas fa-university"></i> edX</p>
-                        <p class="item-date"><i class="far fa-calendar-check"></i> May 2025</p>
-                        <a href="https://courses.edx.org/certificates/22b4da40871e4b67a7d5b450dab0fe56" target="_blank" class="verification-link">
+                        <h3>CS50x: Introduction to Computer Science</h3>
+                        <p class="institution"><i class="fas fa-university"></i> edX</p>
+                        <p class="date"><i class="far fa-calendar-check"></i> May 2025</p>
+                        <a href="https://courses.edx.org/certificates/22b4da40871e4b67a7d5b450dab0fe56" target="_blank" class="verify-link">
                             <i class="fas fa-external-link-alt"></i> Verify Credential
                         </a>
-                    </div>
+                    </article>
                     
-                    <div class="certification-item">
+                    <article class="cert-card">
                         <div class="cert-icon">
                             <i class="fas fa-award"></i>
                         </div>
-                        <h3 class="item-title">Introduction to Programming</h3>
-                        <p class="item-institution"><i class="fas fa-university"></i> SATAR</p>
-                        <p class="item-date"><i class="far fa-calendar-check"></i> Jan 2025</p>
-                    </div>
+                        <h3>Introduction to Programming</h3>
+                        <p class="institution"><i class="fas fa-university"></i> SATAR</p>
+                        <p class="date"><i class="far fa-calendar-check"></i> Jan 2025</p>
+                    </article>
                     
-                    <div class="certification-item">
+                    <article class="cert-card">
                         <div class="cert-icon">
                             <i class="fas fa-award"></i>
                         </div>
-                        <h3 class="item-title">Getting Started with Microsoft Excel</h3>
-                        <p class="item-institution"><i class="fas fa-university"></i> Coursera</p>
-                        <p class="item-date"><i class="far fa-calendar-check"></i> Jun 2025</p>
-                        <a href="https://coursera.org/verify/QT9T7EXREB8Q" target="_blank" class="verification-link">
+                        <h3>Getting Started with Microsoft Excel</h3>
+                        <p class="institution"><i class="fas fa-university"></i> Coursera</p>
+                        <p class="date"><i class="far fa-calendar-check"></i> Jun 2025</p>
+                        <a href="https://coursera.org/verify/QT9T7EXREB8Q" target="_blank" class="verify-link">
                             <i class="fas fa-external-link-alt"></i> Verify Credential
                         </a>
-                    </div>
+                    </article>
                 </div>
             </section>
 
@@ -512,108 +627,66 @@
                     </div>
                     <h2 class="section-title">Languages</h2>
                 </div>
-                <div class="languages-grid">
-                    <div class="language-item">
-                        <div class="language-icon">
+                <div class="lang-grid">
+                    <div class="lang-card">
+                        <div class="lang-icon">
                             <i class="fas fa-globe"></i>
                         </div>
-                        <div class="language-content">
-                            <div class="language-name">Arabic</div>
-                            <div class="language-level">Native</div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 100%"></div>
+                        <div class="lang-info">
+                            <div class="lang-name">Arabic</div>
+                            <div class="lang-level">Native</div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 100%"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="language-item">
-                        <div class="language-icon">
+                    <div class="lang-card">
+                        <div class="lang-icon">
                             <i class="fas fa-globe"></i>
                         </div>
-                        <div class="language-content">
-                            <div class="language-name">English</div>
-                            <div class="language-level">Excellent</div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 90%"></div>
+                        <div class="lang-info">
+                            <div class="lang-name">English</div>
+                            <div class="lang-level">Excellent</div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <h3>Let's Connect</h3>
-                <div class="footer-social">
-                    <a href="https://wa.me/+970567809047" class="footer-social-link" target="_blank" title="WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://t.me/ahmed_web2025" class="footer-social-link" target="_blank" title="Telegram">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                    <a href="https://github.com/Ahmed-Abuarmana" class="footer-social-link" target="_blank" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ahmed-abuarmana" class="footer-social-link" target="_blank" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:ahmedabuarmana.job@gmail.com" class="footer-social-link" target="_blank" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-                
-                <div class="footer-info">
-                    <p>&copy; 2025 Ahmed M. T. Abuarmana. All rights reserved.</p>
-                    <p class="footer-update">Last Updated: October 2025</p>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Back to top -->
-        <a href="#top" class="back-to-top" id="backToTop">
-            <i class="fas fa-arrow-up"></i>
-        </a>
     </div>
 
-    <script>
-        // Fade in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+    <!-- Footer -->
+    <footer>
+        <h3>Let's Connect</h3>
+        <div class="social-links">
+            <a href="https://wa.me/+970567809047" class="social-btn" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://t.me/ahmed_web2025" class="social-btn" target="_blank" title="Telegram">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://github.com/Ahmed-Abuarmana" class="social-btn" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ahmed-abuarmana" class="social-btn" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:ahmedabuarmana.job@gmail.com" class="social-btn" target="_blank" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        
+        <div class="footer-info">
+            <p>&copy; 2025 Ahmed M. T. Abuarmana. All rights reserved.</p>
+            <p>Last Updated: October 2025</p>
+        </div>
+    </footer>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-        // Back to top button
-        const backToTop = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-    </script>
+    <!-- Back to Top -->
+    <a href="#top" class="back-top" id="backTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 </body>
-
 </html>
