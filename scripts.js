@@ -47,7 +47,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
 // Animate progress bars when visible
 const progressObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -65,15 +64,6 @@ const progressObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.progress').forEach(el => {
     progressObserver.observe(el);
-});
-
-// Add subtle parallax effect to hero
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero && scrolled < hero.offsetHeight) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
 });
 
 // Keyboard accessibility for back to top button
